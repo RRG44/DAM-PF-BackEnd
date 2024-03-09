@@ -1,0 +1,6 @@
+exiftool -all= dst.jpg
+Delete all meta information from an image. Note: You should NOT do this to RAW images (except DNG) since proprietary RAW image formats often contain information in the makernotes that is necessary for converting the image.
+
+exiftool dst.jpg
+exiftool -a -u -g1 dst.jpg
+Gives you all the available meta
