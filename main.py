@@ -12,6 +12,10 @@ app = FastAPI()
 def getUrlInfor(urlBase64: str):
   return vt.fetchVirusTotal(urlBase64)
 
+@app.get("/scan_url_test/{urlBase64}")
+def getUrlInfor(urlBase64: str):
+  return vt.fetchVirusTotal(urlBase64)
+
 class ImageRequest(BaseModel):
   name: str
   image: str
